@@ -13,14 +13,25 @@ html {
 .wrapper {
   width: 80%;
   margin: 0 auto;
+  background-image: linear-gradient(0deg, lightblue 10%, orange 70%, orange 10%, orange 10%);
 }
 
 /* STYLE */
 header {
   height: 100px;
   line-height: 100px;
-  background-color: orange;
+  background: orange;
   text-align: center;
+  position: relative;
+}
+
+header .logo {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
 }
 
 header .title {
