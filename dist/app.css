@@ -1,0 +1,67 @@
+/* VARIABLES */
+/* COMMON AND UTILITIES */
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* STYLE */
+header {
+  height: 100px;
+  line-height: 100px;
+  background-color: orange;
+  text-align: center;
+}
+
+header .title {
+  text-transform: uppercase;
+}
+
+main {
+  padding: 0 10%;
+  border-left: 2px solid orange;
+  border-right: 2px solid orange;
+  height: calc(100vh - 100px);
+}
+
+main .section {
+  padding-top: 50px;
+}
+
+main .section-title {
+  padding: 20px 0 10px;
+  color: #646464;
+}
+
+main .section-content::first-letter {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+main .section-content {
+  padding-bottom: 10px;
+}
+
+main .section-content .paragraph-content {
+  text-decoration: underline;
+}
+
+main .section .paragraph-title {
+  padding: 10px 0 5px;
+  color: #646464;
+}
+
+main .section > .paragraph-content {
+  color: lightblue;
+}
+

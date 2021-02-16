@@ -1,0 +1,77 @@
+/* VARIABLES */
+$header-height: 100px;
+$title-color: rgb(100, 100, 100);
+
+/* COMMON AND UTILITIES */
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* STYLE */
+// ?? quando ha senso innestare: wrapper dovrebbe contenere tutto o ha senso creare degli slot?
+// ?? meglio fare una regola comune per h2 e h3 o una variabile?
+header {
+    height: $header-height;
+    line-height: $header-height;
+    background-color: orange;
+    text-align: center;
+    
+    .title {
+        text-transform: uppercase;
+    }
+}
+
+main {
+    padding: 0 10%;
+    border-left: 2px solid orange;
+    border-right: 2px solid orange;
+    // ?? calc nn accetta le variabili?
+    height: calc(100vh - 100px); 
+
+    .section {
+        padding-top: 50px;
+
+        &-title {
+            padding: 20px 0 10px;
+            color: $title-color;
+        }
+
+        &-content::first-letter {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        &-content {
+            padding-bottom: 10px;
+
+            .paragraph-content {
+                text-decoration: underline;
+            }
+        }
+
+        .paragraph-title {
+            padding: 10px 0 5px;
+            color: $title-color;
+        }
+
+        > .paragraph-content {
+            color: lightblue;
+        }
+    }
+}
+
+
+
+
+
