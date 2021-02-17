@@ -21,8 +21,6 @@ html {
 }
 
 /* STYLE */
-// ?? quando ha senso innestare: wrapper dovrebbe contenere tutto o ha senso creare degli slot?
-// ?? meglio fare una regola comune per h2 e h3, una classe utility o una variabile?
 header {
     height: $header-height;
     line-height: $header-height;
